@@ -45,10 +45,6 @@ spec:
       value: "false"
     - name: IMAGE
       value: $(params.IMAGE)
-    - name: DOCKERFILE
-      value: "../output/Dockerfile"
-    - name: CONTEXT
-      value: "../output/"
     workspaces:
     - name: source
       workspace: shared-workspace
