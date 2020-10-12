@@ -31,7 +31,7 @@ spec:
     - name: url
       value: $(params.git-url)
     - name: subdirectory
-      value: ""
+      value: "src"
     - name: deleteExisting
       value: "true"
     - name: revision
@@ -45,6 +45,10 @@ spec:
       value: "false"
     - name: IMAGE
       value: $(params.IMAGE)
+    - name: DOCKERFILE
+      value: src/Dockerfile
+    - name: CONTEXT
+      value: src
     workspaces:
     - name: source
       workspace: shared-workspace
